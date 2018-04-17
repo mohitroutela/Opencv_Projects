@@ -16,6 +16,7 @@ for x,y,w,h in faces:
 	#5th parameter width of the window
 resized_image=cv2.resize(img,(int(img.shape[0]/2),int(img.shape[1]/2)))
 cv2.imshow("pic",resized_image) #pic is the name of the window
+cv2.imwrite("output_of_haar.jpg",resized_image)
 #write the resized image into new file
 cv2.waitKey(0) #so that user can close the window
 '''the user presses any button then the window will be closed '''
